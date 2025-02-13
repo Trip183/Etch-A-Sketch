@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 640px; /* Adjust based on square size */
+  height: 640px; /* Keeps it a perfect square */
+  border: 2px solid black;
+}
+
+/* Individual square divs */
+.square {
+  width: calc(100% / 16); /* Ensures squares fit evenly */
+  height: calc(100% / 16);
+  background-color: lightblue;
+  border: 1px solid gray;
+}
+
+.square:hover {
+  background-color: blue;
+}
