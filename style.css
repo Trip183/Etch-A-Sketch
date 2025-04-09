@@ -4,20 +4,33 @@
 
 .container {
   display: flex;
-  flex-wrap: wrap;
-  width: 640px; /* Adjust based on square size */
-  height: 640px; /* Keeps it a perfect square */
+  flex-direction: column; /* Stack button and grid vertically */
+  align-items: center; /* Center the content */
+  width: 640px; /* Set container width */
+  height: 680px; /* Container's height to include the button */
   border: 2px solid black;
 }
 
-/* Individual square divs */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 640px; /* Fill the container width */
+  height: 640px;
+}
+
 .square {
-  width: calc(100% / 16); /* Ensures squares fit evenly */
-  height: calc(100% / 16);
   background-color: lightblue;
   border: 1px solid gray;
+  width: 40px;
+  height: 40px;
 }
 
 .square:hover {
   background-color: blue;
+}
+
+.button {
+  display: flex;
+  margin-bottom: 10px;
 }
